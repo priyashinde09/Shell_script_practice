@@ -14,8 +14,8 @@ read database
 		echo "Number of lines in $database: $num_lines"
 		echo "Employees with roles 'IT' and 'Manager':"
               #awk '{print $5}' database.txt
-		#awk -F ',' '$4 == "Marketing" && $5 == "IT Manager"' "$database"
-	 # awk '$4 == "Marketing" && $5 == "IT Manager" {print $0}' database.txt	
+		#awk -F '|' '$4 == "Marketing" && $5 == "IT Manager"' "$database"
+	 	
 		#awk '{print $4 == "Marketing" && $5 == "IT Manager"}' database.txt  
    #awk '$4 == "Marketing" && $5 == "IT Manager" {print $0}' database.txt
 	      echo "Details of the employee named 'Kayla':"
