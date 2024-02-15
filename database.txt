@@ -3,9 +3,9 @@ Sr.No First_Name Last_name Designation Post          email_id                i S
 2     Pamela     Aguilar   Marketing   IT Manager    jtaylor@example.net      979000
 3     Amy        Baxter    HR          IT Manager     yatesleslie@example.com 649000
 4     Cindy      Wong      Marketing   IT Manager    williamsscott@example.org 844000
-5     ChristopherFlores    IT          Operations Analyst|annephillips@example.com|964000
-6     William    Sweeney   Research    Sales Manager|radams@example.org|1047000
-7|Paul|Barron|Finance|HR Manager|yperkins@example.net|868000
+5     ChristopherFlores    IT          Operations Analyst|annephillips@example.com 964000
+6     William    Sweeney   Research    Sales Manager radams@example.org       1047000
+7     Paul       Barron    Finance     HR Manager    yperkins@example.net     868000
 8|Diana|Munoz|Operations|Financial Analyst|julie56@example.com|763000
 9|Vicki|Torres|Research|Sales Manager|mgonzalez@example.com|1061000
 10|Larry|Guerra|Operations|IT Manager|anthony89@example.org|858000
