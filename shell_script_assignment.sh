@@ -41,5 +41,6 @@ read database
                                        
     fi
 
+  awk -F '|' '{print $7}' "$salary_file"
   
-
+awk -F '|' '{print $7}' database.txt > "$salary_file"
