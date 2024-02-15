@@ -12,27 +12,20 @@ read database
 #             cat "$database"
 		num_lines=$(wc -l < "$database")
 		echo "Number of lines in $database: $num_lines"
-		echo "Employees with roles 'IT' and 'Manager':"
+  
+		echo "Employees with roles 'Marketing' and 'IT Manager':"
               #awk '{print $5}' database.txt
-		#awk -F '|' '$4 == "Marketing" && $5 == "IT Manager"' "$database"
-	 	
-		#awk '{print $4 == "Marketing" && $5 == "IT Manager"}' database.txt  
-   #awk '$4 == "Marketing" && $5 == "IT Manager" {print $0}' database.txt
+		awk -F '|' '$4 == "Marketing" && $5 == "IT Manager"' "$database"
+  
 	      echo "Details of the employee named 'Kayla':"
-             awk '/Kayla/{print $0}' "$database"
-			echo "Employees with roles 'Marketing' and 'IT Manager':"
-
-		 awk '/Marketing/ && /IT Manager/{print $0}' "$database"
-
-                     awk '/HR/ && /IT Manager/{print $0}' "$database"
-
-               
+             awk -F '|' '/Kayla/{print $0}' "$database"
+	     
                          echo "Data of the first four employees who have HR role:"
-                               awk '$4 == "HR" {print $0} NR==4 {exit}' "$database"
+                         awk '$4 == "HR" {print $0} NR==4 {exit}' "$database"
 
 
                                echo "FirstName and LastName of the employee whose employee number is 34:"
-                                awk '$1 == 3 {print $0}' "$database"
+                                awk '$1 == 34 {print $0}' "$database"
 
 
 #touch salary.txt
