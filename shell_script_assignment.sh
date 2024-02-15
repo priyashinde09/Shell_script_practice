@@ -21,11 +21,11 @@ read database
              awk -F '|' '/Kayla/{print $0}' "$database"
 	     
                          echo "Data of the first four employees who have HR role:"
-                         awk '$4 == "HR" {print $0} NR==4 {exit}' "$database"
+                         awk -F '|' '$4 == "HR" {print $0} NR==4 {exit}' "$database"
 
 
                                echo "FirstName and LastName of the employee whose employee number is 34:"
-                                awk '$1 == 34 {print $0}' "$database"
+                                awk -F '|' '$1 == 34 {print $0}' "$database"
 
 
 #touch salary.txt
